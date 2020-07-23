@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+  <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+  <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
+<!--  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+  <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+  <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>-->
+</head>
+<body>
+  <script>
+  
+  var login = function() {
+  var username = document.getElementById('username').value;
+  var password = document.getElementById('password').value;
+
+  if (username === 'a' && password === 'b') {
+    ons.notification.alert('Congratulations!');
+  } else {
+    ons.notification.alert('Incorrect username or password.');
+  }
+};
+
+  
+    $(function(){
+      // Initialization code
+      $('ons-button').on('click', function(e) {
+        ons.notification.alert('Button is tapped!');
+      })
+    });
+  </script>
+ 
+<!-- <ons-page>
+  <ons-toolbar>
+    <div class="center">Icons</div>
+    <div class="right">
+      <ons-toolbar-button>
+        <ons-icon icon="ion-navicon, material:md-more-vert"></ons-icon>
+      </ons-toolbar-button>
+    </div>
+  </ons-toolbar>
+
+  <section style="padding: 10px">
+    <h3>Material icons</h3>
+
+    <ons-icon icon="md-face"></ons-icon>
+    <ons-icon icon="md-home"></ons-icon>
+    <ons-icon icon="md-zoom-in"></ons-icon>
+
+    <h3>Font awesome</h3>
+
+    <ons-icon icon="fa-file"></ons-icon>
+    <ons-icon icon="fa-cog"></ons-icon>
+    <ons-icon icon="fa-car"></ons-icon>
+
+    <h3>Ionicons</h3>
+
+    <ons-icon icon="ion-navicon"></ons-icon>
+    <ons-icon icon="ion-hammer"></ons-icon>
+    <ons-icon icon="ion-calendar"></ons-icon>
+
+    <h3>Automatic icon</h3>
+    <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+
+    <h3>Colors</h3>
+
+    <ons-icon style="color: red;" icon="md-face"></ons-icon>
+    <ons-icon style="color: blue;" icon="md-face"></ons-icon>
+    <ons-icon style="color: green;" icon="md-face"></ons-icon>
+
+    <h3>Size</h3>
+
+    <ons-icon size="10px" icon="md-face"></ons-icon>
+    <ons-icon size="20px" icon="md-face"></ons-icon>
+    <ons-icon size="30px" icon="md-face"></ons-icon>
+
+    <h3>Spin</h3>
+
+    <ons-icon size="30px" spin icon="md-spinner"></ons-icon>
+
+    <h3>Rotate</h3>
+
+    <ons-icon icon="md-face"></ons-icon>
+    <ons-icon rotate="90" icon="md-face"></ons-icon>
+    <ons-icon rotate="180" icon="md-face"></ons-icon>
+    <ons-icon rotate="270" icon="md-face"></ons-icon>
+
+    <h3>Button</h3>
+    <ons-button>
+      <ons-icon icon="md-face"></ons-icon>
+      Button
+    </ons-button>
+
+    <ons-fab>
+      <ons-icon icon="md-plus"></ons-icon>
+    </ons-fab>
+  </section>
+</ons-page>-->
+
+  <ons-page>
+  <div style="text-align: center; margin-top: 30px;">
+    <p>
+      <ons-input id="username" modifier="underbar" placeholder="Username" float></ons-input>
+    </p>
+    <p>
+      <ons-input id="password" modifier="underbar" type="password" placeholder="Password" float></ons-input>
+    </p>
+    <p style="margin-top: 30px;">
+      <ons-button onclick="login()">Sign in</ons-button>
+    </p>
+  </div>
+</ons-page>
+
+<!--  <ons-button>Click me!</ons-button>
+  
+  <div class="toolbar toolbar--material">
+  <div class="toolbar__left toolbar--material__left">
+    <span class="toolbar-button toolbar-button--material">
+      <i class="zmdi zmdi-menu"></i>
+    </span>
+  </div>
+  <div class="toolbar__center toolbar--material__center">
+    Title
+  </div>
+  <div class="toolbar__right toolbar--material__right">
+    <span class="toolbar-button toolbar-button--material">
+      <i class="zmdi zmdi-search"></i>
+    </span>
+    <span class="toolbar-button toolbar-button--material">
+      <i class="zmdi zmdi-favorite"></i>
+    </span>
+    <span class="toolbar-button toolbar-button--material">
+      <i class="zmdi zmdi-more-vert"></i>
+    </span>
+  </div>
+</div>
+<br />
+<div class="progress-bar progress-bar--indeterminate">
+</div>
+<span>
+  <div><input class="text-input text-input--material" placeholder="Username" type="text" required></div>
+  <br />
+  <div><input class="text-input text-input--material" placeholder="Password" type="password" required></div>
+</span>
+<button class="button button--material">BUTTON</button>-->
+
+<!--<ons-page>
+  <ons-toolbar>
+    <div class="center">Speed dial</div>
+  </ons-toolbar>
+
+  <ons-speed-dial position="bottom right" direction="up">
+    <ons-fab>
+      <ons-icon icon="md-share"></ons-icon>
+    </ons-fab>
+    <ons-speed-dial-item>
+      <ons-icon icon="md-twitter"></ons-icon>
+    </ons-speed-dial-item>
+    <ons-speed-dial-item>
+      <ons-icon icon="md-facebook"></ons-icon>
+    </ons-speed-dial-item>
+    <ons-speed-dial-item>
+      <ons-icon icon="md-google-plus"></ons-icon>
+    </ons-speed-dial-item>
+  </ons-speed-dial>
+</ons-page>-->
+</body>
+</html>
